@@ -1,0 +1,51 @@
+<style>
+	#result1{
+		background-image: url(https://memeprod.ap-south-1.linodeobjects.com/user-template/807d6c643a350cba4fe32d164a37b8c7.png);
+		background-color: lightred;
+		width: 1200px;
+		height: 909px;
+		color: white;
+		font-weight: bold;
+	}
+	#result2{
+		background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fmemes.tw%2Fmaker%2Fmeme%2F12786&psig=AOvVaw3NkDuCHR9jaqkyw_-8RSbn&ust=1678427956087000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMDXy8mVzv0CFQAAAAAdAAAAABAE);
+		background-size: 300px 100px;
+		background-color: lightblue;
+		width: 300px;
+		height: 100px;
+		color: white;
+		font-weight: bold;
+	}
+</style>
+
+<div id='result1'>	
+</div>
+
+<div id='result2'>
+</div>
+
+<div>
+	<label for="x">想睡覺</label>
+	<input type="number" id="x">
+	<br>
+	<label for="y">好想睡覺</label>
+	<input type="number" id="y">
+	<br>
+	<button id="btn">顯示投票結果</button>
+</div>
+
+
+<script>
+	let message = "hello";
+	let x = "海綿寶寶的拉";
+	let y = "好想睡覺喔，為甚麼這麼想睡覺";
+	let z = x < y;
+	document.querySelector("#result1").innerText = x;
+	document.querySelector("#result2").innerText = y;
+	
+	
+	//alert(typeof z);//typeof 顯示是甚麼類型:true&false => 布林直
+	//alert(z);
+	//alert(x+y);
+	//alert(message);
+</script>
