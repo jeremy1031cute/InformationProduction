@@ -50,10 +50,23 @@ div img {
     </div>
     <div id = four class = "big">
       <p>num4</p>
-        <img src="https://static8.depositphotos.com/1338574/829/i/950/depositphotos_8293024-stock-photo-the-number-4-in-gold.jpg">
+        <img id="expic" src="https://static8.depositphotos.com/1338574/829/i/950/depositphotos_8293024-stock-photo-the-number-4-in-gold.jpg">
         <audio controls>
           <source src="still_life.m4a" type="audio/mpeg">
         </audio>
     </div>
+    <script>
+      let exchange_picture = ['https://pic.pimg.tw/ichen0920/1592620634-1558238227_wn.jpg','https://i.imgur.com/RUfK4wA.jpg'];
+      let count = 0;
+      setInterval(
+        function(){
+          document.querySelector("#expic").src=exchange_picture[count%2];
+          count = count + 1;
+        },
+        3000
+
+
+        );
+    </script>
 </body>
 </html>
