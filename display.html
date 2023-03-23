@@ -17,9 +17,13 @@
 			<br />
 			有的時候我就是好想逃離那一切
 		</div>
-		<div class="chat">
-			<img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9409ef8b707fc98b21d7c2e95f3c4477.png" width="450" height="400">
 
+		<button class="chat">
+			<img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9409ef8b707fc98b21d7c2e95f3c4477.png" width="450" height="400">
+		</button>
+
+		<div class="chat">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qLGEtaJDcXx5kdnhV7VeZkXfXuXI_-mDHw&usqp=CAU" width="450" height="400">
 		</div>
 
 	<script type="text/javascript">
@@ -31,11 +35,19 @@
 		}
 
 		function hide_chat() {
-			document.querySelector(".chat").style.display="none";
+			//document.querySelector(".chat").style.display="none";
+			let elements = document.querySelectorAll(".chat");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";
+			}
 		}
 
 		function show_chat() {
-			document.querySelector(".chat").style.display="block";
+			//document.querySelector(".chat").style.display="block";
+			let elements = document.querySelectorAll(".chat");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";
+			}
 		}
 	</script>
 	</body>
