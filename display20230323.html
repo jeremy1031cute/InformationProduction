@@ -1,44 +1,75 @@
 <html>
-	<head>
-		<title>顯示與隱藏</title>
+<head>
+	<title>顯示與隱藏</title>
 
-		<style>
+	<style>
 		.sea img{
 			width: 300px;
 			height: 350px;
 		}
 
-		.sea {
+		.sea, .japan, .taiwan {
 			display: inline-block;
 		}
+
+		.japan img {
+			width: 200px;
+			height: 225px;
+		}
+
+		.taiwan img {
+			width: 150px;
+			height: 150px;
+		}
 	</style>
-	</head>
-	<body>
-		<button onclick="hide();">隱藏文字</button>
-		<button onclick="show();">顯示文字</button>
+</head>
+<body>
+	<button onclick="hide();">隱藏文字</button>
+	<button onclick="show();">顯示文字</button>
 
-		<button onclick="hide_chat();">隱藏派大星</button>
-		<button onclick="show_chat();">顯示派大星</button>
+	<button onclick="hide_chat();">隱藏派大星</button>
+	<button onclick="show_chat();">顯示派大星</button>
 
-		<div class="news_title">
-			第六週上課
-			<br />
-			要準備期中報告了
-			<br />
-			有的時候我就是好想逃離那一切
+	<div class="news_title">
+		第六週上課
+		<br />
+		要準備期中報告了
+		<br />
+		有的時候我就是好想逃離那一切
+	</div>
+
+	<button class="chat sea">
+		<img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9409ef8b707fc98b21d7c2e95f3c4477.png" width="450" height="400">
+	</button>
+
+	<div class="chat sea">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qLGEtaJDcXx5kdnhV7VeZkXfXuXI_-mDHw&usqp=CAU" width="450" height="400">
+	</div>
+
+	<div class="sea_otter sea"><!-- class can include more than one type with ' '-->
+		<img src="https://img.natgeomedia.com/userfiles/sm/sm1200630_images_A1/5572/2020051540494273.jpg" width="100" height="100">
+	</div>
+
+	<div class="bands">
+		<div class="yoasobi japan">
+			<img src="https://cdn.hk01.com/di/media/images/dw/20220330/585898691999567872274983.jpeg/Q50xXOaC66iSlwL90djTZxDWvxd1vvMOUeA4aFHgOGg?v=w1920">
 		</div>
 
-		<button class="chat sea">
-			<img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9409ef8b707fc98b21d7c2e95f3c4477.png" width="450" height="400">
-		</button>
+		<div class="yellowgreensociety japan">
+			<img src="https://www.likejapan.com/wp-content/uploads/2020/05/%E6%8A%93%E7%B7%8A%E5%BF%83%E9%9D%88%E7%9A%84%E9%9F%B3%E6%A8%82-%E6%97%A5%E6%9C%AC%E6%A8%82%E5%A3%87%E5%82%99%E5%8F%97%E6%B3%A8%E7%9B%AE%E2%80%94%E2%80%94%E7%B6%A0%E9%BB%83%E8%89%B2%E7%A4%BE%E6%9C%83-%E5%85%A8%E6%96%87%E4%BB%8B%E7%B4%B9.jpg">
+		</div>
+	</div>
 
-		<div class="chat sea">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qLGEtaJDcXx5kdnhV7VeZkXfXuXI_-mDHw&usqp=CAU" width="450" height="400">
+	<div class="bands">
+
+		<div class="fivefivesixsix taiwan">
+			<img src="https://images.chinatimes.com/newsphoto/2020-11-20/656/20201120005168.jpg">
 		</div>
 
-		<div class="sea_otter sea"><!-- class can include more than one type with ' '-->
-			<img src="https://img.natgeomedia.com/userfiles/sm/sm1200630_images_A1/5572/2020051540494273.jpg" width="100" height="100">
+		<div class="nineoneone taiwan">
+			<img src="https://attach.setn.com/newsimages/2017/01/05/768598-PH.jpg">
 		</div>
+	</div>
 
 	<script type="text/javascript">
 		function hide() {
@@ -64,6 +95,6 @@
 			}
 		}
 	</script>
-	</body>
+</body>
 
 </html>
