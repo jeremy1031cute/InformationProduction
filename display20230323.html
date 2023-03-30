@@ -21,9 +21,47 @@
 			width: 150px;
 			height: 150px;
 		}
+
+		.backgroundImage {
+			width: 300vw;
+			height: 300vh;
+			position: fixed;
+			top:0px;
+			left:-200px;
+			z-index:-1;
+			background-size: cover;/*用圖片填滿整個畫面，但畫面可能拉長*/
+			/*background-image: url(https://s.yimg.com/os/creatr-uploaded-images/2023-03/9b812630-c3b6-11ed-ba77-bef783c75dc8);
+			position:fixed;
+			top:0px;
+			left:0px;
+			z-index:-1;*//*將圖片置於文字下面，無設置(z軸)一般為0*/
+		}
+		
+		.backgroundImage video{
+			width: 140vw;
+			height: 150vh;
+			position:fixed;
+			top:0px;
+			left:-200px;
+
+		}
+
+		body {
+			color: white;
+			font-size: 50px;
+		}
+
+		.news_title {
+			background-color: rgba(0, 0, 0, 0.5);/*rgb調色方式:最後一個是條透明度*/
+		}
 	</style>
 </head>
 <body>
+	<div class="backgroundImage">
+		<video id="backgroundVideo">
+			<source src="./download_material/doggy.mp4" type="video/mp4"><!--remeber to add .mp4 副檔名-->
+		</video>
+	</div>	
 	<button onclick="hide();">隱藏文字</button>
 	<button onclick="show();">顯示文字</button>
 
@@ -94,6 +132,10 @@
 				elements[i].style.display = "block";
 			}
 		}
+
+		window.addEventListener("click",function(){
+			document.querySelector("#backgroundVideo").play();
+		});
 	</script>
 </body>
 
