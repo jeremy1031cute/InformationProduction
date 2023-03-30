@@ -1,6 +1,10 @@
 <html>
 <head>
 	<title>顯示與隱藏</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!--google的字型:需網路下載-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC">加號是空格之意，下面要使用要記得替換-->
 
 	<style>
 		.sea img{
@@ -38,12 +42,11 @@
 		}
 		
 		.backgroundImage video{
-			width: 140vw;
-			height: 150vh;
+			width: 100vw;
+			height: 100vh;
 			position:fixed;
 			top:0px;
 			left:-200px;
-
 		}
 
 		body {
@@ -53,6 +56,7 @@
 
 		.news_title {
 			background-color: rgba(0, 0, 0, 0.5);/*rgb調色方式:最後一個是條透明度*/
+			font-family: "Audiowide", 新細明體, serif;
 		}
 	</style>
 </head>
@@ -69,7 +73,7 @@
 	<button onclick="show_chat();">顯示派大星</button>
 
 	<div class="news_title">
-		第六週上課
+		第六週上課OMG
 		<br />
 		要準備期中報告了
 		<br />
@@ -131,11 +135,18 @@
 			for(let i = 0; i < elements.length; i=i+1) {
 				elements[i].style.display = "block";
 			}
+			document.querySelector("#backgroundVideo").src="./download_material/useaseau.mp4";
 		}
 
 		window.addEventListener("click",function(){
-			document.querySelector("#backgroundVideo").play();
-		});
+			let video = document.querySelector("#backgroundVideo");
+			if (video.paused) {
+				video.play();
+			} else {
+				video.pause();
+			}
+		}
+		);
 	</script>
 </body>
 
